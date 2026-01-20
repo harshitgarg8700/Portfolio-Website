@@ -1,0 +1,98 @@
+/* Base Styling */
+:root {
+  --footer-bg-color-light: #f8fafc;
+  --footer-bg-color-dark: #1f2937;
+  --footer-text-color-light: #333;
+  --footer-text-color-dark: #e5e7eb;
+  --accent: #38bdf8;
+}
+
+/* Footer Container */
+.footer-container {
+  background-color: var(--footer-bg-color-light);
+  color: var(--footer-text-color-light);
+  padding: 40px 60px;
+  text-align: center;
+  transition: all 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Dark Mode Styling for body.dark */
+body.dark .footer-container {
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  color: var(--footer-text-color-dark);
+}
+
+/* Footer Content */
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.footer-content p {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: var(--accent);
+  font-weight: 500;
+  font-size: 14px;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+/* Divider Styling */
+.footer-container hr {
+  border: none;
+  height: 1px;
+  background-color: var(--accent);
+  width: 60%;
+  margin: 10px auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    padding: 30px 20px;
+  }
+
+  .footer-content p {
+    font-size: 16px;
+  }
+
+  .footer-links {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .footer-links a {
+    font-size: 16px;
+    margin: 0 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-content p {
+    font-size: 14px;
+  }
+
+  .footer-links a {
+    font-size: 14px;
+    margin: 0 5px;
+  }
+}
