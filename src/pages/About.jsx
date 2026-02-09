@@ -1,7 +1,6 @@
 import React from 'react'
 import './about.css'
 import harshit2 from '../assets/IMG_2381.JPG'
-import resume from '../public/harshit_garg_resume.pdf'
 
 const About = () => {
   return (
@@ -23,9 +22,9 @@ const About = () => {
           </p>
 
           <p>
-            I work with modern technologies like <strong>React, JavaScript,
-            HTML, CSS, and MySQL</strong>, and I enjoy transforming ideas into
-            clean, functional software.
+            I work with modern technologies like{' '}
+            <strong>React, JavaScript, HTML, CSS, and MySQL</strong>, and I enjoy
+            transforming ideas into clean, functional software.
           </p>
 
           <p>
@@ -34,7 +33,11 @@ const About = () => {
             environments.
           </p>
 
-          <a href={resume} download className="about-btn">
+          <a
+            href="/harshit_garg_resume.pdf"
+            download
+            className="about-btn"
+          >
             Download Resume
           </a>
         </div>
