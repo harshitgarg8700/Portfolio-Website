@@ -1,7 +1,7 @@
 import React from 'react'
 import './about.css'
 import harshit2 from '../assets/IMG_2381.JPG'
-import resume from '../assets/HARSHIT GARG RESUME - Copy.PDF'
+import resume from '../public/harshit_garg_resume.pdf'
 
 const About = () => {
   return (
